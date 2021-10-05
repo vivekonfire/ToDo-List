@@ -11,6 +11,7 @@ import ForgotPassword from "./components/Pages/ForgotPassword";
 import Alert from "./components/Layout/Alert";
 import Home from "./components/Pages/Home";
 import NewPassword from "./components/Pages/NewPassword";
+import Navbar from "./components/Layout/Navbar";
 
 import PrivateRoute from "./components/routing/PrivateRouting";
 import NewPasswordRouting from "./components/routing/NewPasswordRouting";
@@ -21,6 +22,7 @@ function App() {
       <AuthState>
         <AlertState>
           <Router>
+            <Navbar />
             <Alert />
             <Switch>
               <Route exact path="/signin" component={Signin} />

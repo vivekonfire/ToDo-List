@@ -1,24 +1,26 @@
 {
-    "name": "securityboat_assignment",
-    "version": "1.0.0",
-    "description": "assignment",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js",
-        "server": "nodemon server.js"
-    },
-    "author": "",
-    "license": "MIT",
-    "dependencies": {
-        "bcryptjs": "^2.4.3",
-        "dotenv": "^10.0.0",
-        "express": "^4.17.1",
-        "express-validator": "^6.12.2",
-        "jsonwebtoken": "^8.5.1",
-        "mongoose": "^6.0.8"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.13"
-    }
+  "name": "securityboat_assignment",
+  "version": "1.0.0",
+  "description": "assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "clientinstall": "npm install --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
